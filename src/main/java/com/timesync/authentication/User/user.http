@@ -1,0 +1,31 @@
+POST http://localhost:8080/api/v1/auth/verify_jwt
+Content-Type: application/json
+
+{
+  "jwt": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ0aW1lc3luYyIsImVtYWlsIjoiaHJ1c2hpMjAwMkBnbWFpbC5jb20iLCJpZCI6MTksImlhdCI6MTcwODkwNDk3NCwiZXhwIjoxNzA4OTA4NTc0LCJqdGkiOiJiMzAyMGFiMC0yMDA3LTQzZTUtOGI2Yy01ZDllYmQ4MmRkZDYiLCJuYmYiOjE3MDg5MDQ5NzV9.sayA9LIH0h0k4JeOBGxbkmrJv73s4L-4VIn_ALtJVfo"
+}
+
+###
+
+POST http://localhost:8080/api/v1/auth/generate_token
+Content-Type: application/json
+
+{
+  "email": "hrushi2002@gmail.com",
+  "password": "pass"
+}
+
+
+###
+POST http://localhost:8080/api/v1/user
+Content-Type: application/json
+
+{
+"name": "hrushi",
+"email": "f@gmail.com",
+"passwordDigest": "f",
+"password": "pass"
+}
+
+###
+GET http://localhost:8080/api/v1/user
